@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The following functions create a special matrix container allowing to solve a matrix inverse and cache the result
 
-## Write a short comment describing this function
+
+## makeCacheMatrix creates a special matrix container containing the matrix and the cached result of its inverse.
 
 makeCacheMatrix <- function(x = matrix())
 {
@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix())
 }
 
 
-## Write a short comment describing this function
+## cacheSolve solves the matrix inverse of a matrix created by makeCacheMatrix and store the result in the cache matrix.
 
 cacheSolve <- function(x, ...)
 {
